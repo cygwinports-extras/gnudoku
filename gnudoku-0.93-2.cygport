@@ -1,0 +1,15 @@
+DESCRIPTION="GTK+ sudoku game"
+HOMEPAGE="http://icculus.org/~jcspray/GNUDoku/"
+SRC_URI="http://icculus.org/~jcspray/GNUDoku/GNUDoku-${PV}.tar.gz"
+SRC_DIR="GNUDoku-${PV}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall PREFIX=${D}/usr
+}

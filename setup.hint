@@ -1,4 +1,4 @@
 category: Gnome Games
-requires: cygwin gtkmm24 xorg-x11-base
-sdesc: "Su Doku puzzle creator and solver"
+requires: cygwin libglibmm2.4_1 libgtkmm2.4_1 libpangomm1.4_1 libsigc2.0_0
+sdesc: "Sudoku puzzle creator and solver"
 ldesc: "GNUDoku is a free program for creating and solving Su Doku puzzles."

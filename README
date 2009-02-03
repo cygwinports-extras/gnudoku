@@ -3,16 +3,19 @@ gnudoku
 GNUDoku is a free program for creating and solving Su Doku puzzles.
 
 Runtime requirements:
-  cygwin-1.5.18-1
-  gtkmm24-2.6.5-1
+  cygwin-1.5.25-15
+  libglibmm2.4_1-2.18.1-1
+  libgtkmm2.4_1-2.14.3-1
+  libpangomm1.4_1-2.14.1-1
+  libsigc2.0_0-2.2.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.18-1
-  binutils-20050610-1
-  gcc-core-3.4.4-1
-  make-3.80-1
-  pkgconfig-0.17.2-2
+  binutils-20080624-2
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  pkg-config-0.23a-2
 
 Canonical website:
   http://icculus.org/~jcspray/GNUDoku/
@@ -24,7 +27,7 @@ Build instructions:
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./GNUDoku-0.93-X.sh all
+  cygport  ./gnudoku-0.93-X.cygport all
 
 This will create:
   /usr/src/gnudoku-0.93-X-src.tar.bz2
@@ -34,11 +37,10 @@ This will create:
 
 Files included in the binary package:
 
-  /usr/bin/gnudoku.exe
+  /usr/bin/GNUDoku.exe
   /usr/share/applications/GNUDoku.desktop
-  /usr/share/doc/Cygwin/gnudoku-0.93.README
-  /usr/share/doc/gnudoku-0.93/ChangeLog
   /usr/share/doc/gnudoku-0.93/COPYING
+  /usr/share/doc/gnudoku-0.93/ChangeLog
   /usr/share/doc/gnudoku-0.93/README
   /usr/share/doc/gnudoku-0.93/TODO
   /usr/share/pixmaps/GNUDoku.png
@@ -46,6 +48,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.93-2 -----
+Rebuilt with cygport.
 
 ----- version 0.93-1 -----
 Initial release for Cygwin.
