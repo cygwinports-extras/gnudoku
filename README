@@ -3,19 +3,21 @@ gnudoku
 GNUDoku is a free program for creating and solving Su Doku puzzles.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglibmm2.4_1-2.18.1-1
-  libgtkmm2.4_1-2.14.3-1
-  libpangomm1.4_1-2.14.1-1
-  libsigc2.0_0-2.2.3-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libglibmm2.4_1-2.20.0-1
+  libgtkmm2.4_1-2.16.0-1
+  libpangomm1.4_1-2.24.0-1
+  libsigc2.0_0-2.2.3-10
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
-  pkg-config-0.23a-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
 
 Canonical website:
   http://icculus.org/~jcspray/GNUDoku/
@@ -39,21 +41,18 @@ Files included in the binary package:
 
   /usr/bin/GNUDoku.exe
   /usr/share/applications/GNUDoku.desktop
-  /usr/share/doc/gnudoku-0.93/COPYING
-  /usr/share/doc/gnudoku-0.93/ChangeLog
-  /usr/share/doc/gnudoku-0.93/README
-  /usr/share/doc/gnudoku-0.93/TODO
+  /usr/share/doc/gnudoku/COPYING
+  /usr/share/doc/gnudoku/ChangeLog
+  /usr/share/doc/gnudoku/README
+  /usr/share/doc/gnudoku/TODO
   /usr/share/pixmaps/GNUDoku.png
 
 ------------------
 
 Port Notes:
 
------ version 0.93-2 -----
-Rebuilt with cygport.
-
------ version 0.93-1 -----
-Initial release for Cygwin.
+----- version 0.93-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
